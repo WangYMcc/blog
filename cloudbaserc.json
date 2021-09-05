@@ -1,0 +1,20 @@
+{
+    "envId": "blog-3g9mc5kte0831c2f",
+    "version": "2.0",
+    "$schema": "https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
+    "functionRoot": "./functions",
+    "functions": [],
+    "framework": {
+        "name": "blog",
+        "plugins": {
+            "hexo": {
+                "use": "@cloudbase/framework-plugin-website",
+                "inputs": {
+                    "buildCommand": "npx hexo generate",
+                    "outputPath": "./public"
+                }
+            }
+        }
+    },
+    "region": "ap-guangzhou"
+}
